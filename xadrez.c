@@ -9,6 +9,8 @@ int main() {
     int mbispo = 5;
     int mtorre = 5;
     int mrainha = 8;
+    int mcavalob = 2;
+    int mcavaloe = 1;
     int i;
 
     // BISPO 
@@ -39,9 +41,20 @@ int main() {
         i++;
     } while (i <= mrainha);
     
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    // Movimentação do Cavalo
+
+    printf ("\nMovimento do Cavalo:\n");
+    for (i = 1; i <= mcavaloe; i++)
+    {
+        int j = 1;
+        while (j <= mcavalob)
+        {
+            printf ("Baixo \n");
+            j++;
+        }
+        printf ("Esquerda \n");
+    }
+    
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
